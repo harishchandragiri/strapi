@@ -10,5 +10,10 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "name": {
+      "type": "text",
+      "required": true
+    }
+  }
 }
