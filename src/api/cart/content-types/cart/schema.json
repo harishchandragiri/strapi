@@ -11,8 +11,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "text",
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "orderDate": {
+      "type": "datetime",
       "required": true
     }
   }
