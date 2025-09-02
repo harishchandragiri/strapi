@@ -27,9 +27,9 @@
       "type": "integer",
       "required": true
     },
-    "user": {
+    "users": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "inversedBy": "products"
     }
