@@ -82,6 +82,17 @@
       "relation": "oneToMany",
       "target": "api::transaction.transaction",
       "mappedBy": "user"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
