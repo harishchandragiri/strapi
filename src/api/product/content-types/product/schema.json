@@ -19,10 +19,6 @@
       "type": "decimal",
       "required": true
     },
-    "Updated": {
-      "type": "datetime",
-      "required": true
-    },
     "Quantity": {
       "type": "integer",
       "required": true
@@ -33,11 +29,16 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "products"
     },
-    "cart": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::cart.cart",
-      "inversedBy": "products"
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

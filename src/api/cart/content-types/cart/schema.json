@@ -11,23 +11,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string",
-      "required": true
-    },
-    "price": {
+    "quantity": {
       "type": "integer",
       "required": true
     },
-    "orderDate": {
-      "type": "datetime",
-      "required": true
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     },
     "products": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::product.product",
-      "mappedBy": "cart"
+      "target": "api::product.product"
+    },
+    "buy": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   }
 }
