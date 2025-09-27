@@ -20,9 +20,9 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "products": {
+    "productName": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::product.product"
     },
     "buy": {
